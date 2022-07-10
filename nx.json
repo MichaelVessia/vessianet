@@ -13,22 +13,18 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "nx/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ]
+        "cacheableOperations": ["build", "lint", "test", "e2e", "check"],
+        "accessToken": "NTFmYzQyMDMtZmUyMy00NDU5LWJmNTktZGI3NDAxOGY5MzAyfHJlYWQtd3JpdGU="
       }
     }
   },
   "targetDefaults": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ]
+      "dependsOn": ["^build"]
     }
-  }
+  },
+  "plugins": ["@nxtensions/astro"],
+  "defaultProject": "website"
 }
