@@ -1,14 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/header.astro";
+import Hello from "../components/hello.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Michael Vessia">
 	<main> 
-		<div class="bg-white dark:bg-black text-black dark:text-neutral-100 min-h-screen font-mono flex flex-col">
+		<div class="bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-200 min-h-screen font-mono flex flex-col">
 			<Header />
-			<div class="mx-auto my-auto">
-				Hello world.
+			<div class="mx-auto">
+			<Hello />
 			</div>
 		</div>
 	</main>
