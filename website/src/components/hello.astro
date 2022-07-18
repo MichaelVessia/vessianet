@@ -1,7 +1,41 @@
 ---
+import myPic from "/mv.webp";
 ---
-<div>
-    <h1 class="text-5xl text-black dark:text-white">Michael Vessia</h1>
-    <div class="text-2xl mb-5">Senior Software Engineer at <a class="font-bold" href="https://flosports.tv" target="_blank">FloSports</a></div>
-    <!-- <div class="mb-3">Building full stack web applications</div>-->
+<div class="flex justify-between">
+    <div>
+        <h1 class="font-bold text-3xl md:text-5xl text-black dark:text-white">Michael Vessia</h1>
+        <div class="mb-5 text-black dark:text-white">Senior Software Engineer at <a class="underline" href="https://flosports.tv" target="_blank">FloSports</a></div>
+        <div class="mb-3">
+            <p class="mb-2">
+                Currently writing 
+                full stack
+                <span class="text-sky-600">TypeScript</span>
+                using
+                <span class="text-sky-600">Angular</span>
+                and
+                <span class="text-sky-600">NestJS</span>
+                on
+                <span class="text-sky-600">Kubernetes</span>
+                to help FloSports become the essential destination for passionate sports fans.
+            </p>
+            <p class="mb-2">
+                Previously worked with Major League Baseball and the National Football League 
+                in contracting roles to build software for baseball umpires and league officials
+                using
+                <span class="text-sky-600">React</span>,
+                <span class="text-sky-600">Java</span>,
+                <span class="text-sky-600">PostgreSQL</span>,
+                and many more technologies.
+            </p>
+            <p class="mb-2">
+                Occasional contributor to 
+                <a class="underline" href="https://openpowerlifting.org" target="_blank">OpenPowerlifting</a>
+                and other
+                <a class="underline" href="https://plsource.org" target="_blank">Powerlifting Software</a>
+            </p>
+        </div>
+    </div>
+
+    <img class="w-48 h-48 grayscale rounded-full drop-shadow-xl ml-5" src={myPic} />
+
 </div>
